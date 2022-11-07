@@ -1,0 +1,82 @@
+.features{
+    text-align: center;
+    padding-top: 100px;
+    background-color: #fff;
+}
+.features p{
+    margin-top: 40px;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    color: #9a9898;
+}
+.listing{
+    max-width: 650px;
+    margin:80px auto;
+    border-bottom: 1px solid #9a9898 ;
+    
+}
+.listing ul{
+    display: flex;
+    justify-content: space-around;
+    
+} 
+.listing ul li{
+    color: #9a9898;
+    list-style: none;
+    transition: color 0.4s ease-in;
+
+}
+.listing ul li:hover{
+    color: #ef768c;
+}
+
+.listing ul .simple{
+    padding-bottom: 35px;
+    position: relative;
+    color: #000;
+}
+.listing ul .simple::after{
+    content: "";
+    width: 250px;
+    height: 4px;
+    background-color:#ef768c ;
+    position: absolute;
+    bottom: 0;
+    left: -45px;
+
+}
+@media only screen and (max-width: 739px){
+    .listing ul{
+        flex-direction: column;
+        
+    } 
+    .listing ul li{
+        padding: 25px;
+    }
+    .speedy{
+        border-top: 1px solid #9a9898;
+        border-bottom: 1px solid #9a9898; 
+       
+    }
+    .listing{
+        border-top: 1px solid #9a9898;
+        border-bottom: 1px solid #9a9898;
+        max-width: 300px;
+        margin: 50px auto;
+
+    }
+    .listing ul .simple::after{
+        width: 130px;
+        bottom: 0;
+        left: 85px;
+    
+    }
+
+    .features p{
+        width: 90%;
+    }
+}

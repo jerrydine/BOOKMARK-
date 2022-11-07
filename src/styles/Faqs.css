@@ -1,0 +1,45 @@
+.faqs{
+    text-align: center;
+    margin-top: 200px;
+}
+.faqs p{
+    line-height: 1.6;
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: #9a9898;
+    margin: 25px auto 60px;
+}
+.faq-link{
+    margin-top: 50px;
+}
+.faq-btn{
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    background-color: #5266df;
+    border: none;
+    border-radius:5px;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 739px){
+    .faqs h1{
+        width: 300px;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 978px){
+    .faqs p{
+        max-width:370px ;
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+    .faqs p{
+        font-size: 1rem;
+        padding: 0 35px;
+    }
+   
+}

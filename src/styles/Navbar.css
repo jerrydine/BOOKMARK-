@@ -1,0 +1,114 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 120px;
+    background-color: #fff;
+    position: relative;
+}
+.mobile-nav{
+    display: none;
+}
+nav> div{
+    flex-basis: 60%;
+}
+.desktop-menu{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+.desktop-menu li{
+    list-style: none;
+}
+.desktop-menu li a{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.5s ease-out;
+    font-weight: 300;
+}
+li a:hover{
+    color: #ef768c;
+}
+.btn-log{
+    font-size: 14px;
+    padding: 12px 25px;
+    border: 3px solid #ef768c;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 6px 1px rgba(96, 94, 94, 0.1);
+}
+
+@media only screen and (max-width: 1200px){
+    nav{
+        justify-content: space-around;
+        max-width:900px
+        
+    
+    
+    }
+}
+@media only screen and (max-width: 982px){
+    nav{
+        justify-content: space-around;
+        max-width:100%;
+        padding:0 50px;
+        
+    
+    
+    }
+    nav> div{
+        flex-basis: 45%;
+    }
+    
+}
+@media only screen and (max-width: 750px ){
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-nav{
+        display: block;
+        position: relative;
+    }
+    .menu-container{
+        display: block;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter:  blur(5px);
+        padding: 30px;
+        width: 300px;
+        z-index: 100;
+        text-align: center;
+    }
+    
+    .menu-list li a {
+        display: block;
+        margin-bottom: 15px;
+        text-decoration: none;
+        color: #fff;
+    
+    }
+    .menu-list li{
+        list-style: none;
+    }
+    .menu-list .btn-log{
+        background-color: white;
+        display: block;
+        margin-top: 25px;
+        color: #ef768c;
+
+    }
+    .menu-bar{
+        position: absolute;
+        right: 0;
+        top: -9px;
+    }
+}
+@media only screen and (max-width: 425px){
+    nav{
+        padding:0 15px;
+    }
+}
